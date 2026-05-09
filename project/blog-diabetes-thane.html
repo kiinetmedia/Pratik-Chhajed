@@ -37,7 +37,17 @@
   .btn-ghost{ background:transparent; color:var(--primary); border:1px solid var(--primary); }
   .btn-ghost:hover{ background:var(--primary-tint); }
 
-  .monogram{ width:36px;height:36px;border-radius:999px;background:var(--primary);color:var(--gold);font-family:'Fraunces',serif;font-weight:600;font-size:15px;display:flex;align-items:center;justify-content:center; }
+  .monogram{ width:36px;height:36px;border-radius:999px;background:var(--primary);color:var(--gold);font-family:'Fraunces',serif;font-weight:600;font-size:15px;display:flex;align-items:center;justify-content:center;letter-spacing:.02em; }
+
+  /* Google rating pill */
+  .rating-pill{ display:inline-flex; align-items:center; gap:.4rem; background:#fff; border:1px solid var(--rule); border-radius:999px; padding:.35rem .7rem; font-size:13px; font-weight:600; color:var(--ink); transition:border-color .2s ease, background-color .2s ease; }
+  .rating-pill:hover{ border-color:var(--gold); background:#FFFDF8; }
+  .rating-pill .star{ color:var(--gold); }
+
+  /* Sticky header shadow when scrolled */
+  header.app-header{ transition: box-shadow .2s ease, background-color .2s ease; }
+  header.app-header.scrolled{ box-shadow: 0 1px 0 rgba(15,76,92,.06), 0 8px 20px -16px rgba(15,76,92,.18); }
+  @media (max-width: 900px){ .desk-nav{ display:none; } }
 
   /* Article body */
   .prose-doc{ max-width:65ch; }
@@ -73,22 +83,31 @@
 <!-- Header -->
 <header class="app-header sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-rule">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[68px] flex items-center justify-between gap-4">
-    <a href="Home.html" class="flex items-center gap-3" aria-label="Home — Dr. Pratik Chhajed">
-      <span class="monogram">P·C</span>
+    <a href="index.html" class="flex items-center gap-3 group" aria-label="Home — Dr. Pratik Chhajed">
+      <span class="monogram overflow-hidden" aria-hidden="true" style="padding:0; background:#0F4C5C"><img
+          src="assets/dr-pratik.jpg" alt="" class="w-full h-full object-cover"
+          style="object-position:50% 18%;" /></span>
       <span class="leading-tight">
         <span class="block font-semibold text-ink text-[15px]">Dr. Pratik Chhajed</span>
         <span class="block eyebrow text-slate2">MD Medicine</span>
       </span>
     </a>
-    <nav class="hidden md:flex items-center gap-7 text-[14px] text-ink/85">
-      <a href="Home.html#about" class="hover:text-primary">About</a>
-      <a href="Home.html#services" class="hover:text-primary">Services</a>
-      <a href="Home.html#blog" class="hover:text-primary text-primary font-semibold">Blog</a>
-      <a href="Home.html#faq" class="hover:text-primary">FAQs</a>
-      <a href="Home.html#find" class="hover:text-primary">Contact</a>
+    <nav class="desk-nav flex items-center gap-7 text-[14px] text-ink/85" aria-label="Primary">
+      <a href="index.html#about" class="hover:text-primary">About</a>
+      <a href="index.html#services" class="hover:text-primary">Services</a>
+      <a href="index.html#glucobell" class="hover:text-primary">Glucobell</a>
+      <a href="index.html#blog" class="hover:text-primary text-primary font-semibold">Blog</a>
+      <a href="index.html#faq" class="hover:text-primary">FAQs</a>
+      <a href="index.html#find" class="hover:text-primary">Contact</a>
     </nav>
     <div class="flex items-center gap-2 sm:gap-3">
-      <a href="Home.html#book" class="btn btn-gold text-[14px] hidden md:inline-flex">Book Appointment</a>
+      <a href="https://www.google.com/search?q=Dr+Pratik+Chhajed+Thane" target="_blank" rel="noopener"
+        class="rating-pill hidden md:inline-flex" aria-label="5.0 stars on Google, opens Google reviews">
+        <span class="star" aria-hidden="true">★</span>
+        <span>5.0</span>
+        <span class="text-slate2 font-medium">on Google</span>
+      </a>
+      <a href="index.html#book" class="btn btn-gold text-[14px] hidden md:inline-flex">Book Appointment</a>
       <button id="menuBtn"
         class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded border border-rule text-ink"
         aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
@@ -115,12 +134,12 @@
     </button>
   </div>
   <nav class="px-6 py-4 flex flex-col text-[16px] font-medium overflow-y-auto" aria-label="Mobile">
-    <a href="Home.html#about" class="py-2 flex items-center">About</a>
-    <a href="Home.html#services" class="py-2 flex items-center">Services</a>
-    <a href="Home.html#glucobell" class="py-2 flex items-center">Glucobell</a>
-    <a href="Home.html#blog" class="py-2 flex items-center">Blog</a>
-    <a href="Home.html#faq" class="py-2 flex items-center">FAQs</a>
-    <a href="Home.html#find" class="py-2 flex items-center">Contact</a>
+    <a href="index.html#about" class="py-2 flex items-center">About</a>
+    <a href="index.html#services" class="py-2 flex items-center">Services</a>
+    <a href="index.html#glucobell" class="py-2 flex items-center">Glucobell</a>
+    <a href="index.html#blog" class="py-2 flex items-center">Blog</a>
+    <a href="index.html#faq" class="py-2 flex items-center">FAQs</a>
+    <a href="index.html#find" class="py-2 flex items-center">Contact</a>
   </nav>
 </div>
 
@@ -129,7 +148,7 @@
 <article>
 <section class="bg-cream border-b border-rule">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-10 md:pt-16">
-    <a href="Home.html#blog" class="text-slate2 text-[14px] hover:text-primary inline-flex items-center gap-1">
+    <a href="index.html#blog" class="text-slate2 text-[14px] hover:text-primary inline-flex items-center gap-1">
       <span aria-hidden="true">←</span> All articles
     </a>
     <p class="eyebrow text-gold-deep mt-8">Living With Chronic Conditions · 6 min read</p>
@@ -202,7 +221,7 @@
         <p class="font-display text-[22px] text-ink max-w-prose" style="font-weight:600;">
           If this sounds like you, book a slot.
         </p>
-        <a href="Home.html#book" class="btn btn-gold">Book an Appointment</a>
+        <a href="index.html#book" class="btn btn-gold">Book an Appointment</a>
       </div>
     </div>
   </div>
@@ -235,9 +254,9 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
     <p class="text-[13px] text-cream/60">© <span id="yr">2026</span> Dr. Pratik Chhajed · Internal Medicine, Thane West</p>
     <div class="flex gap-4 text-[13px]">
-      <a href="Home.html#book" class="hover:text-gold">Book</a>
-      <a href="Home.html#blog" class="hover:text-gold">All articles</a>
-      <a href="Home.html#find" class="hover:text-gold">Contact</a>
+      <a href="index.html#book" class="hover:text-gold">Book</a>
+      <a href="index.html#blog" class="hover:text-gold">All articles</a>
+      <a href="index.html#find" class="hover:text-gold">Contact</a>
     </div>
   </div>
 </footer>

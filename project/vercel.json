@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/Home.html", "destination": "/", "permanent": true },
+    { "source": "/home.html", "destination": "/", "permanent": true }
+  ]
+}
