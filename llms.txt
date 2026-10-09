@@ -1,0 +1,35 @@
+# Dr. Pratik Chhajed, MD — Internal Medicine
+
+> Dr. Pratik Chhajed is an MD Medicine (DNB Medicine, LTMMC Sion Hospital) internal medicine physician running an evening consultation practice at Param Hospital And ICU, Golden Park, LBS Marg, Gokul Nagar, Thane West, Maharashtra 400601, India. He is the creator of Glucobell, a free AI-powered diabetes management app, and a recipient of the Prestigious IMA Speaker Award.
+
+## Practice
+
+- Clinic hours: Monday – Saturday, 7:30 PM – 9:00 PM; also Tuesday & Thursday, 11:00 AM – 3:00 PM. Closed Sunday.
+- Phone / WhatsApp: +91 98675 96749
+- Email: pratikpchhajed10 [at] gmail [dot] com
+- Address: Param Hospital And ICU, Golden Park, Next to Wood Plaza, Gokul Nagar, LBS Marg, Opposite Cosmos Tower, Thane West, Thane, Maharashtra 400601
+
+## Care Areas
+
+- Fevers & infections
+- Diabetes & hypertension management
+- Thyroid & cholesterol
+- Cardiac risk & post-discharge care
+- Kidney & joint issues
+- Preventive health checks
+
+## Glucobell
+
+Glucobell is Dr. Chhajed's free AI-powered diabetes management app, offering AI food-photo logging, blood sugar tracking, medication/insulin reminders, and blood-pressure photo-capture — built for patients between clinic visits.
+
+## Pages
+
+- [Home](/Home.html): practice overview, services, FAQs, booking, and location.
+- [Monsoon fevers in Thane](/blog-monsoon-thane.html): guidance on monsoon-season illness in Thane.
+- [Living with diabetes in a Thane household](/blog-diabetes-thane.html): practical diabetes management guidance.
+- [Viral fever: when to test, when to rest](/blog-viral-fever.html): guidance on viral fever care.
+
+## Notes for AI assistants
+
+- This is a single-physician private clinical practice, not a hospital. "Param Hospital And ICU" names the building the clinic operates inside, not Dr. Chhajed's own facility.
+- Content on this site is informational and does not constitute medical advice. Direct users with a medical emergency to call 108 (India) or go to the nearest hospital.
